@@ -92,7 +92,7 @@ describe('Validaciones de la clave', () => {
     it('debería retornar error si la clave no es válida', () => {
       // Arrange
       const nombreUsuario = "john";
-      const clave = "password123!";
+      const clave = "Password123!";
 
       // Act
       const resultado = validarClave(nombreUsuario, clave, commonPasswords);

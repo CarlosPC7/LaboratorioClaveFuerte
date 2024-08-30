@@ -59,6 +59,7 @@ export const tieneNombreUsuario = (nombreUsuario: string, clave: string): Valida
 export const tienePalabrasComunes = (clave: string, commonPasswords: string[]): ValidacionClave => {
   const claveLower = clave.toLowerCase();
   const palabraComun = commonPasswords.find((password) => claveLower.includes(password.toLowerCase()));
+
   if (palabraComun) {
     return { esValida: false, error: "La clave no debe de contener palabras comunes" };
   }
